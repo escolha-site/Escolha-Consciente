@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/scripts.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/interativo.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Escolha Consciente</title>
+</head>
+<body>
+
+    <!-- PRINCIPAL -->
+    <main>
+        <!-- INÍCIO -->
+        <section id="inicio" class="inicio">
+            <h1>
+                Você sabe o que está consumindo?
+            </h1>
+        </section>
+
+
+        
+<!-- PARTE INTERATIVA -->
+<section id="interacao" class="interacao">
+
+    <h2>QUAL VOCÊ ESCOLHERIA?</h2>
+
+
+    <div class="produtos">
+
+        <!-- REFRIGERANTE -->
+        <button class="produto" type="button"
+            data-alimento="refrigerante">
+            <img
+                src="img/koka bermela.png"
+                alt="Refrigerante"
+            >
+            <span>Refrigerante</span>
+        </button>
+
+        <!-- SALGAdINHO -->
+        <button class="produto" type="button"
+            data-alimento="salgadinho">
+            <img
+                src="img/doritu bermelo.png"
+                alt="Salgadinho de pacote"
+            >
+            <span>Salgadinho de pacote</span>
+        </button>
+
+        <!-- BISCOITO RECHEADO -->
+        <button class="produto" type="button"
+            data-alimento="biscoito">
+            <img
+                src="img/oreo bermelo.png"
+                alt="Bolacha recheada"
+            >
+            <span>Bolacha recheada</span>
+        </button>
+
+        <!-- MACARRÃO INSTANTÂNEO -->
+        <button class="produto" type="button"
+            data-alimento="macarrao">
+            <img
+                src="img/mojo bermelo.png"
+                alt="Macarrão instantâneo"
+            >
+            <span>Macarrão instantâneo</span>
+        </button>
+
+        <!-- SORVETE INDUSTRIALIZADO -->
+        <button class="produto" type="button"
+            data-alimento="sorvete">
+            <img
+                src="img/corbet bermelo.png"
+                alt="Sorvete industrializado"
+            >
+            <span>Sorvete industrializado</span>
+        </button>
+
+<!-- CHOCOLATE EM BARRA -->
+<button class="produto" type="button"
+    data-alimento="chocolate">
+    <img
+        src="img/chocolate.png"
+        alt="Chocolate em barra"
+    >
+    <span>Chocolate em barra</span>
+</button>
+
+<!-- BEBIDA LÁCTEA -->
+<button class="produto" type="button"
+    data-alimento="bebida">
+    <img
+        src="img/bebida.png"
+        alt="Bebida láctea saborizada"
+    >
+    <span>Bebida láctea</span>
+</button>
+
+<!-- NUGGETS -->
+<button class="produto" type="button"
+    data-alimento="nuggets">
+    <img
+        src="img/nuggets.png"
+        alt="Nuggets industrializados"
+    >
+    <span>Nuggets</span>
+</button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ÁREA DE INFORMAÇÕES DOS ALIMENTOS -->
+<section id="informacoes" class="informacoes" hidden>
+
+    <button id="fecharInfo" type="button">
+        ✕ Fechar
+    </button>
+
+    <article class="texto-alimento" data-info="refrigerante" hidden>
+        <h2>Refrigerante</h2>
+
+        <p>
+            Refrigerantes são bebidas ultraprocessadas que podem fornecer
+            grandes quantidades de açúcar e muitas calorias, sem oferecer
+            quantidades significativas de nutrientes importantes para o organismo, como fibras, vitaminas e minerais.
+            O consumo frequente de bebidas açucaradas pode contribuir
+            para o ganho de peso e aumentar riscos de doenças crônicas como a diabetes tipo 2.
+        </p>
+
+
+        <h3>Fontes da pesquisa</h3>
+        <ul>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/alimentacao/alimentos-e-bebidas-ultraprocessados" target="_blank" rel="noopener noreferrer">
+                    INCA — Alimentos e bebidas ultraprocessados
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/como-identificar-o-acucar-escondido-nos-alimentos" target="_blank" rel="noopener noreferrer">
+                    INCA — Como identificar o açúcar escondido
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/secretariageral/pt-br/consea/acervo-consea/publicacoes/alimentacao-adequada-e-saudavel/guia-alimentar-para-a-populacao-brasileira-2014.pdf" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Guia Alimentar
+                </a>
+            </li>
+        </ul>
+    </article>
+
+
+    <article class="texto-alimento" data-info="salgadinho" hidden>
+        <h2>Salgadinho de pacote</h2>
+
+        <p>
+            Salgadinhos de pacote são exemplos de alimentos ultraprocessados.
+            Sua composição pode incluir farinha ou amido, óleos, sal,
+            aromatizantes e outros aditivos. Dependendo do produto,
+            podem apresentar quantidades elevadas de sódio e gorduras.
+        </p>
+
+        <p>
+            O consumo frequente de ultraprocessados pode prejudicar
+            a qualidade da alimentação, especialmente quando esses
+            produtos substituem refeições e alimentos in natura.
+            Embalagens coloridas e imagens atraentes destacam o sabor,
+            mas não mostram toda a composição do alimento.
+        </p>
+
+        <h3>Fontes da pesquisa</h3>
+        <ul>
+            <li>
+                <a href="https://www.gov.br/secretariageral/pt-br/consea/acervo-consea/publicacoes/alimentacao-adequada-e-saudavel/guia-alimentar-para-a-populacao-brasileira-2014.pdf" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Guia Alimentar
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/alimentacao/alimentos-e-bebidas-ultraprocessados" target="_blank" rel="noopener noreferrer">
+                    INCA — Alimentos ultraprocessados e saúde
+                </a>
+            </li>
+            <li>
+                <a href="https://linhasdecuidado.saude.gov.br/portal/obesidade-no-adulto/sou-paciente/processamento-alimentos-profissional/" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Classificação dos alimentos
+                </a>
+            </li>
+        </ul>
+    </article>
+
+
+    <article class="texto-alimento" data-info="biscoito" hidden>
+        <h2>Biscoito recheado</h2>
+
+        <p>
+            Biscoitos recheados costumam combinar açúcar, gorduras,
+            farinha refinada e ingredientes industriais, como aromatizantes
+            e emulsificantes. A composição varia conforme a marca,
+            mas esses produtos são classificados como ultraprocessados.
+        </p>
+
+        <p>
+            O consumo frequente de alimentos ultraprocessados pode
+            contribuir para uma alimentação desequilibrada. Recheios,
+            cores, imagens ampliadas e frases que destacam o sabor
+            tornam o produto visualmente atraente, mas não revelam
+            todos os seus ingredientes nem suas quantidades.
+        </p>
+
+        <h3>Fontes da pesquisa</h3>
+        <ul>
+            <li>
+                <a href="https://www.gov.br/secretariageral/pt-br/consea/acervo-consea/publicacoes/alimentacao-adequada-e-saudavel/guia-alimentar-para-a-populacao-brasileira-2014.pdf" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Guia Alimentar
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/como-identificar-o-acucar-escondido-nos-alimentos" target="_blank" rel="noopener noreferrer">
+                    INCA — Como identificar o açúcar escondido
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/atencao-para-os-rotulos-de-alimentos-industrializados" target="_blank" rel="noopener noreferrer">
+                    INCA — Atenção aos rótulos
+                </a>
+            </li>
+        </ul>
+    </article>
+
+
+    <article class="texto-alimento" data-info="macarrao" hidden>
+        <h2>Macarrão instantâneo</h2>
+
+        <p>
+            O macarrão instantâneo é um alimento ultraprocessado.
+            Além da massa, o produto pode incluir gorduras, sal e
+            ingredientes industriais. O tempero merece atenção porque
+            pode contribuir bastante para a quantidade de sódio da refeição.
+        </p>
+
+        <p>
+            O consumo excessivo de sódio pode aumentar a pressão arterial
+            e o risco de doenças cardiovasculares. A quantidade varia
+            conforme a marca e a versão. A praticidade do preparo não
+            substitui a importância de conferir a tabela nutricional
+            e a lista de ingredientes.
+        </p>
+
+        <h3>Fontes da pesquisa</h3>
+        <ul>
+            <li>
+                <a href="https://www.gov.br/secretariageral/pt-br/consea/acervo-consea/publicacoes/alimentacao-adequada-e-saudavel/guia-alimentar-para-a-populacao-brasileira-2014.pdf" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Guia Alimentar
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/como-reduzir-o-consumo-de-sal-e-alimentos-conservados-em-sal" target="_blank" rel="noopener noreferrer">
+                    INCA — Como reduzir o consumo de sal
+                </a>
+            </li>
+            <li>
+                <a href="https://linhasdecuidado.saude.gov.br/portal/obesidade-no-adulto/sou-paciente/processamento-alimentos-profissional/" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Classificação dos alimentos
+                </a>
+            </li>
+        </ul>
+    </article>
+
+
+    <article class="texto-alimento" data-info="sorvete" hidden>
+        <h2>Sorvete industrializado</h2>
+
+        <p>
+            Muitos sorvetes industrializados são classificados como
+            ultraprocessados e podem conter açúcar, gorduras, aromatizantes,
+            corantes, emulsificantes e estabilizantes. A composição
+            depende da marca e do tipo de produto.
+        </p>
+
+        <p>
+            Algumas versões apresentam quantidades elevadas de açúcar
+            e gorduras saturadas. O consumo frequente de ultraprocessados
+            pode prejudicar a qualidade da alimentação. Imagens de caldas,
+            chocolates e frutas destacam a aparência e o sabor esperado,
+            mas é necessário consultar os ingredientes e a tabela nutricional.
+        </p>
+
+        <h3>Fontes da pesquisa</h3>
+        <ul>
+            <li>
+                <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/noticias/2021/in-natura-processados-ultraprocessados-conheca-os-tipos-de-alimento" target="_blank" rel="noopener noreferrer">
+                    Ministério da Saúde — Tipos de alimentos
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/alimentacao/alimentos-e-bebidas-ultraprocessados" target="_blank" rel="noopener noreferrer">
+                    INCA — Alimentos ultraprocessados e saúde
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/atencao-para-os-rotulos-de-alimentos-industrializados" target="_blank" rel="noopener noreferrer">
+                    INCA — Atenção aos rótulos
+                </a>
+            </li>
+        </ul>
+    </article>
+
+
+
+<!-- CHOCOLATE -->
+<article class="texto-alimento" data-info="chocolate" hidden>
+    <h2>Chocolate em barra</h2>
+
+    <p>
+        Chocolates industrializados podem conter açúcar, gorduras,
+        leite em pó, aromatizantes e emulsificantes, dependendo do tipo
+        e da composição do produto. Algumas versões apresentam maior
+        quantidade de açúcar em relação ao cacau, além de outros
+        ingredientes utilizados para modificar o sabor e a textura.
+    </p>
+
+    <p>
+        O consumo frequente de produtos com grandes quantidades de
+        açúcar e gorduras pode contribuir para uma alimentação
+        desequilibrada, favorecendo o ganho de peso e aumentando
+        o risco de problemas de saúde. Por isso, é importante observar
+        a composição do chocolate e verificar a quantidade de açúcar
+        e gorduras na tabela nutricional.
+    </p>
+
+    <h3>Fontes da pesquisa</h3>
+    <ul>
+        <li>
+            <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/noticias/2021/in-natura-processados-ultraprocessados-conheca-os-tipos-de-alimento"
+            target="_blank" rel="noopener noreferrer">
+                Ministério da Saúde — Tipos de alimentos
+            </a>
+        </li>
+        <li>
+            <a href="https://linhasdecuidado.saude.gov.br/portal/obesidade-no-adulto/sou-paciente/processamento-alimentos-profissional/"
+            target="_blank" rel="noopener noreferrer">
+                Ministério da Saúde — Classificação dos alimentos
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
+            target="_blank" rel="noopener noreferrer">
+                ANVISA — Rotulagem nutricional
+            </a>
+        </li>
+    </ul>
+</article>
+
+
+
+<!-- BEBIDA LÁCTEA -->
+<article class="texto-alimento" data-info="bebida" hidden>
+    <h2>Bebida láctea</h2>
+
+    <p>
+        Bebidas lácteas industrializadas, principalmente as versões
+        adoçadas e aromatizadas, podem conter açúcar, corantes,
+        aromatizantes e outros aditivos. Algumas apresentam quantidades
+        significativas de açúcar adicionado, mesmo sendo comercializadas
+        com sabores associados a frutas ou chocolate.
+    </p>
+
+    <p>
+        O consumo frequente de bebidas com excesso de açúcar pode
+        contribuir para o ganho de peso e aumentar o risco de problemas
+        como obesidade e diabetes tipo 2. Por isso, é importante observar
+        a tabela nutricional e a lista de ingredientes, verificando
+        a quantidade de açúcar presente no produto.
+    </p>
+
+    <h3>Fontes da pesquisa</h3>
+    <ul>
+        <li>
+            <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/dicas/alimentacao/como-identificar-o-acucar-escondido-nos-alimentos"
+            target="_blank" rel="noopener noreferrer">
+                INCA — Como identificar o açúcar escondido
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes/guiadebolso2018.pdf"
+            target="_blank" rel="noopener noreferrer">
+                Ministério da Saúde — Guia Alimentar
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/alimentacao/alimentos-e-bebidas-ultraprocessados"
+            target="_blank" rel="noopener noreferrer">
+                INCA — Alimentos e bebidas ultraprocessados
+            </a>
+        </li>
+    </ul>
+</article>
+
+
+
+<!-- NUGGETS -->
+<article class="texto-alimento" data-info="nuggets" hidden>
+    <h2>Nuggets</h2>
+
+    <p>
+        Nuggets industrializados são produtos ultraprocessados feitos
+        a partir de carne de frango reconstituída, farinha, óleos,
+        gorduras e outros ingredientes. Também podem conter aditivos,
+        como aromatizantes e realçadores de sabor, utilizados para
+        modificar suas características.
+    </p>
+
+    <p>
+        Dependendo da composição e da forma de preparo, esses produtos
+        podem apresentar quantidades elevadas de sódio e gorduras.
+        O consumo frequente de alimentos ultraprocessados pode
+        prejudicar a qualidade da alimentação e contribuir para
+        o desenvolvimento de problemas de saúde ao longo do tempo.
+    </p>
+
+    <h3>Fontes da pesquisa</h3>
+    <ul>
+        <li>
+            <a href="https://linhasdecuidado.saude.gov.br/portal/obesidade-no-adulto/sou-paciente/processamento-alimentos-profissional/"
+            target="_blank" rel="noopener noreferrer">
+                Ministério da Saúde — Classificação dos alimentos
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes/guiadebolso2018.pdf"
+            target="_blank" rel="noopener noreferrer">
+                Ministério da Saúde — Guia Alimentar
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/alimentacao/alimentos-e-bebidas-ultraprocessados"
+            target="_blank" rel="noopener noreferrer">
+                INCA — Alimentos e bebidas ultraprocessados
+            </a>
+        </li>
+    </ul>
+</article>
+
+</section>
+
+
+    <!-- MARCA DE RODAPÉ CANTO DIREITO -->
+    <footer>
+        <p>
+            Sobre
+             <nav><a href="nosso projeto.html">Conheça a campanha</a></nav>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* SEÇÃO INTERATIVA */
+
+.interacao {
+    padding: 60px 7%;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    border-top: 10px solid var(--vermelho);
+}
+
+.interacao h2 {
+    max-width: 700px;
+    color: var(--vermelho);
+}
+
+.interacao p {
+    max-width: 700px;
+    color: var(--branco);
+    font-size: 1.05rem;
+}
+
+/* OPÇÕES DE ALIMENTOS */
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.produto {
+    padding: 0;
+    overflow: hidden;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    border: 2px solid var(--vermelho);
+    cursor: pointer;
+}
+
+.produto img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.produto span {
+    display: block;
+    padding: 12px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produto:hover {
+    background-color: var(--vermelho);
+}
+
+.produto:focus-visible {
+    outline: 4px solid var(--branco);
+    outline-offset: 4px;
+}
+
+/* TELAS MAIORES */
+
+@media (min-width: 750px) {
+    .produtos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/* TELA DE INFORMAÇÕES - EFEITO WASTED */
+
+#informacoes {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding: 70px 8% 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: auto;
+
+    background-color: #000;
+    color: var(--branco);
+}
+
+/* Mantém a tela escondida até selecionar um alimento */
+
+#informacoes[hidden] {
+    display: none;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+
+#informacoes.abrindo {
+    animation: wastedEntrada 1.2s ease-out forwards;
+}
+
+@keyframes wastedEntrada {
+    0% {
+        background-color: #fff;
+    }
+
+    15% {
+        background-color: #f21b1b;
+    }
+
+    45% {
+        background-color: #850000;
+    }
+
+    100% {
+        background-color: #000;
+    }
+}
+
+/* CONTEÚDO DO POP-UP */
+
+.texto-alimento {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 20px 0;
+
+    color: var(--branco);
+    opacity: 0;
+}
+
+/* O texto aparece depois do flash */
+
+#informacoes.abrindo .texto-alimento:not([hidden]) {
+    animation: aparecerTexto 0.7s ease forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULOS EM VERMELHO */
+
+.texto-alimento h2 {
+    color: var(--vermelho);
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.texto-alimento h3 {
+    color: var(--vermelho);
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.texto-alimento p,
+.texto-alimento li {
+    color: var(--branco);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.texto-alimento ul {
+    padding-left: 20px;
+}
+
+.texto-alimento a {
+    color: var(--vermelho);
+    text-decoration: underline;
+}
+
+/* BOTÃO DE FECHAR */
+
+#fecharInfo {
+    position: absolute;
+    top: 25px;
+    right: 7%;
+
+    padding: 10px 16px;
+
+    color: var(--vermelho);
+    background: transparent;
+    border: 2px solid var(--vermelho);
+
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#fecharInfo:hover {
+    color: #000;
+    background-color: var(--vermelho);
+}
+
+/* IMPEDE A PÁGINA DE ROLAR COM O POP-UP ABERTO */
+
+body.modal-aberto {
+    overflow: hidden;
+}
+
+/* AJUSTES PARA CELULAR */
+
+@media (max-width: 600px) {
+    #informacoes {
+        padding: 75px 7% 35px;
+        align-items: flex-start;
+    }
+
+    .texto-alimento h2 {
+        font-size: 2.2rem;
+    }
+
+    .texto-alimento p,
+    .texto-alimento li {
+        font-size: 0.95rem;
+    }
+
+    #fecharInfo {
+        top: 15px;
+        right: 7%;
+    }
+}
+ 
